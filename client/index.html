@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+  </head>
+  <body>
+    <!-- Professional V.O.I.C.E Initial Loader -->
+    <div id="initial-loader" style="
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #2C3E50;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+    ">
+      <!-- V.O.I.C.E Logo with Concentric Circles -->
+      <div style="margin-bottom: 24px;">
+        <div style="position: relative; width: 80px; height: 80px; margin: 0 auto;">
+          <!-- Outer circle -->
+          <div style="
+            position: absolute;
+            inset: 0;
+            border-radius: 50%;
+            border: 3px solid #F39C12;
+          "></div>
+          <!-- Middle circle -->
+          <div style="
+            position: absolute;
+            inset: 8px;
+            border-radius: 50%;
+            border: 2px solid #F39C12;
+            opacity: 0.7;
+          "></div>
+          <!-- Inner circle -->
+          <div style="
+            position: absolute;
+            inset: 16px;
+            border-radius: 50%;
+            border: 1px solid #F39C12;
+            opacity: 0.5;
+          "></div>
+          <!-- Center dot -->
+          <div style="
+            position: absolute;
+            inset: 24px;
+            border-radius: 50%;
+            background: #F39C12;
+            opacity: 0.3;
+          "></div>
+        </div>
+      </div>
+      
+      <!-- Title -->
+      <h2 style="
+        color: white;
+        font-size: 24px;
+        font-weight: 700;
+        margin: 0 0 8px 0;
+        text-align: center;
+      ">AI Visibility Checker</h2>
+      
+      <!-- Gold underline -->
+      <div style="
+        width: 120px;
+        height: 3px;
+        background: #F39C12;
+        border-radius: 2px;
+        margin-bottom: 24px;
+      "></div>
+      
+      <!-- Loading text -->
+      <div style="
+        color: #BDC3C7;
+        font-size: 16px;
+        text-align: center;
+        max-width: 320px;
+      ">Initializing professional AI analysis...</div>
+      
+      <!-- Powered by text -->
+      <p style="
+        color: rgba(189, 195, 199, 0.7);
+        font-size: 12px;
+        text-align: center;
+        margin: 16px 0 0 0;
+        max-width: 320px;
+      ">Powered by Google's Structured Data Testing Tool</p>
+    </div>
+    
+    <!-- No animations - Professional static design -->
+    
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <!-- This is a replit script which adds a banner on the top of the page when opened in development mode outside the replit environment -->
+    <script type="text/javascript" src="https://replit.com/public/js/replit-dev-banner.js"></script>
+  </body>
+</html>
