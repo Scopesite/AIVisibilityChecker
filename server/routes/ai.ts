@@ -11,7 +11,7 @@ declare module 'express-serve-static-core' {
 import { generateAIRecommendations } from '../services/openai.js';
 import { consumeCredits, getBalance, SCAN_COST } from '../credits.js';
 import { generateId } from '../utils.js';
-import { insertProject, insertAnalysis } from '../storage.js';
+import { storage } from '../storage.js';
 import { runQuickAnalysis } from '../analysis/quickAnalysis.js';
 
 const router = express.Router();
@@ -87,7 +87,7 @@ router.post('/analyse', async (req, res) => {
 
     try {
       // Create project record
-      const projectId = await insertProject({
+      const projectId = await storage.insertSchemaAnalysis({
         userId,
         url,
         email: email || req.user.email || 'unknown@example.com', // Fallback email
@@ -139,7 +139,7 @@ router.post('/analyse', async (req, res) => {
       }
 
       // Store analysis results
-      await insertAnalysis({
+      await storage.insertSchemaAnalysis({
         projectId,
         recommendations: aiResult.recommendations!
       });
