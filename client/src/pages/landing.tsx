@@ -2,8 +2,7 @@ import { Target, TrendingUp, Search, Eye, CheckCircle, ExternalLink } from "luci
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "wouter";
-import voiceLogo from '@assets/Untitled (350 x 250 px)_1758732653247.png';
-import aiVisibilityImage from '@assets/AISEOCHECKER_1759002967998.png';
+// import aiVisibilityImage from '@assets/AISEOCHECKER_1759002967998.png';
 
 
 export default function Landing() {
@@ -19,11 +18,7 @@ export default function Landing() {
         {/* Header with Logo */}
         <div className="text-center mb-12">
           <div className="flex items-center justify-center mb-8">
-            <img 
-              src={voiceLogo} 
-              alt="V.O.I.C.E™" 
-              className="h-32 w-auto sm:h-40 md:h-48"
-            />
+            <div className="text-5xl font-bold text-[#F39C12]">V.O.I.C.E™</div>
           </div>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
             Visibility Optimization Intelligence for Conversational Engines
@@ -40,13 +35,19 @@ export default function Landing() {
             Most businesses are invisible - don't let yours be one of them.
           </p>
 
-          {/* AI Visibility Image */}
+          {/* AI Visibility Placeholder */}
           <div className="mb-12 flex justify-center">
-            <img 
-              src={aiVisibilityImage} 
-              alt="89% of businesses are not being recommended by AI chatbots - Find out your AI visibility score" 
-              className="max-w-md h-auto rounded-lg shadow-lg"
-            />
+            <div className="max-w-md p-8 bg-gradient-to-br from-[#F39C12]/10 to-[#F39C12]/20 rounded-lg shadow-lg border border-[#F39C12]/20">
+              <div className="text-center">
+                <div className="text-6xl mb-4">🤖</div>
+                <p className="text-lg font-semibold text-gray-700">
+                  89% of businesses are not being recommended by AI chatbots
+                </p>
+                <p className="text-sm text-gray-600 mt-2">
+                  Find out your AI visibility score
+                </p>
+              </div>
+            </div>
           </div>
 
           {/* CTA Button */}

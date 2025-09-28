@@ -5,7 +5,6 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { Link } from "wouter";
 import { CheckCircle, Target, Loader2, AlertTriangle, LogOut, Sparkles, Unlock, History, CreditCard } from "lucide-react";
-import voiceLogo from '@assets/Untitled (350 x 250 px)_1758732653247.png';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Checkbox } from "@/components/ui/checkbox";
@@ -228,11 +227,7 @@ export default function AIVisibilityChecker() {
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-4">
-              <img 
-                src={voiceLogo} 
-                alt="V.O.I.C.E™ AI Visibility Architecture" 
-                className="h-8 w-auto"
-              />
+              <div className="text-2xl font-bold text-[#F39C12]">V.O.I.C.E™</div>
               <div>
                 <h1 className="text-lg font-bold">AI Action Plan Generator</h1>
                 <p className="text-sm text-muted-foreground">Powered by V.O.I.C.E™ methodology</p>

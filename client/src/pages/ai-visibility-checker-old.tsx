@@ -3,7 +3,6 @@ import { useQuery } from "@tanstack/react-query";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { CheckCircle, Target, ExternalLink, Loader2, AlertTriangle, TrendingUp, Search, Eye, Crown, CreditCard, Zap, LogOut } from "lucide-react";
-import voiceLogo from '@assets/Untitled (350 x 250 px)_1758732653247.png';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Checkbox } from "@/components/ui/checkbox";
@@ -783,12 +782,7 @@ export default function AIVisibilityChecker() {
                 <div className="text-center mb-6 sm:mb-8">
                   <div className="mb-4">
                     <div className="mb-4">
-                      <img 
-                        src={voiceLogo} 
-                        alt="V.O.I.C.E™ AI Visibility Architecture - ChatGPT & AI Assistant Optimization" 
-                        className="w-48 h-auto sm:w-64 mx-auto max-w-full"
-                        data-testid="img-voice-logo"
-                      />
+                      <div className="text-4xl font-bold text-[#F39C12] mx-auto">V.O.I.C.E™</div>
                     </div>
                     <h1 className="text-2xl sm:text-3xl font-bold mb-3 bg-gradient-to-r from-foreground to-foreground/80 bg-clip-text">
                       AI Visibility Checker

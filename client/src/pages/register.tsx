@@ -4,7 +4,6 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { Link, useLocation } from "wouter";
 import { Loader2, User, Mail, Lock, ArrowLeft } from "lucide-react";
-import voiceLogo from '@assets/Untitled (350 x 250 px)_1758732653247.png';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -89,7 +88,7 @@ export default function Register() {
             </Link>
             
             <div className="flex justify-center mb-4">
-              <img src={voiceLogo} alt="V.O.I.C.E" className="h-16 w-auto" />
+              <div className="text-3xl font-bold text-[#F39C12]">V.O.I.C.E</div>
             </div>
             
             <CardTitle className="text-2xl font-bold text-gray-900">
